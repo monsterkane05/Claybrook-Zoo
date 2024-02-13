@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Strike&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 70% 30%;
     grid-template-rows: auto;
     grid-template-areas: 
-    "header header header"
-    "nav main aside"
-    "footer footer footer";
+    "nav nav "
+    "main aside"
+    "footer footer ";
 }
 
 header{
@@ -13,23 +21,104 @@ header{
     color: white;
     padding: 20px;
     grid-area: header;
+    
 }
 
 nav{
-    background-color: darkblue;
+    background-color: #014e2e;
     grid-area: nav;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+nav img{
+    width: 50px;
+    padding: 0.5rem;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 1.5rem;
+}
+
+nav ul li{
+    list-style: none;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Protest Strike';
+    font-size: 1.2rem;
+    
+}
+
+nav ul li a:hover{
+    color: #c1d32f;
+    text-decoration: none;
+    font-family: 'Protest Strike';
+    font-size: 1.2rem;
+    
 }
 
 main{
-    background-color: yellow;
-    color: white;
+    background-color: white;
+    position: relative;
+    color: black;
     grid-area: main;
 }
 
+main img{
+    width: 100%;
+}
+
+.img-overlay{
+    position: absolute;
+    color: white;
+    top: 16px;
+    left: 16px;
+    
+}
+
+.img-overlay h1 {
+    font-family: 'Protest Strike';
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.img-overlay p {
+    width: 40%;
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
 aside{
-    background-color: lightcoral;
+    background-color: lightgrey;
     grid-area: aside;
 }
+
+aside section{
+    padding: 1rem;
+}
+
+aside section h1{
+    font-family: 'Protest Strike';
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+aside section p{
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 footer{
     background-color: darkgray;
