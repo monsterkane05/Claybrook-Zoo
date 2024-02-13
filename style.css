@@ -1,0 +1,31 @@
+body{
+    display: grid;
+}
+
+header{
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    grid-area: header;
+}
+
+nav{
+    background-color: darkblue;
+    grid-area: nav;
+}
+
+main{
+    background-color: yellow;
+    color: white;
+    grid-area: main;
+}
+
+aside{
+    background-color: lightcoral;
+    grid-area: aside;
+}
+
+footer{
+    background-color: darkgray;
+    grid-area: footer;
+}
